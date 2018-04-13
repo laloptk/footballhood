@@ -8,6 +8,7 @@ This theme is in its early stages, I'm building it to create a blog about Footba
 For now, theres only a couple of classes inside the inc folder, and I also built a page template named Page Main (page-main.php). That template is meant to be used in the homepage and maybe using the same code with other pages that will need to list several posts from different categories. 
 
 The tools I'm using for building this theme:
+-----------------------------------------------
 
 1. **_Underscores Starters Theme** (https://underscores.me): I want this theme to be very fast, so I don't want to use pre-built themes or builders that have tons of generic stuff and can be a burden for site speed. 
 2. **WP Gulp** (https://github.com/ahmadawais/WPGulp): Beeing able to focus on the fun stuff, or at least reduce the repetitve tasks makes development faster, so I use WP Gulp as a way to improve my workflow and have the possibility of using Sass compiling automatically and havig the browser refreshig every time a do a change on any file. Image magik might be in the way for this workflow, so I can lossy optimize images.
