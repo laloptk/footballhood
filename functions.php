@@ -123,8 +123,6 @@ function ftblhood_scripts() {
 	wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Economica:400,400i,700,700i|Open+Sans:300,300i,700");
 	wp_enqueue_script('fontawesome', "https://use.fontawesome.com/releases/v5.0.8/js/all.js", array(), '5.0.8', true );
 	wp_enqueue_script( 'ftblhood-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), '20151215', true );
-
 	wp_enqueue_script( 'ftblhood-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
