@@ -15,3 +15,17 @@ The tools I'm using for building this theme:
 3. **Sass**: All styles are written with Sass and you can find them in the assets/css folder.
 4. **Node.js, NPM and Gulp**: In order to use WP Gulp, I'm using Node.js, NPM and Gulp installed in my computer. 
 5. **Debug Console**: This plugin is very useful to test pieces of code that you want to use in your functions or methods.
+
+To DO:
+-----------------------------------------------
+
+1. Improve Comments
+2. Use NAMESPACES
+3. Refactor Classes code where needed
+4. Delete commented code
+5. Finish styling single posts template
+6. Decide if the sidebar will be needed in single posts
+7. Build categories template
+8. Create a class(es) for regitering CPT's and Custom Taxonomies easyly
+9. Register CPT's for Teams, Events, Games/Results
+8. Plan and build custom meta boxes and custom fields (Maybe delayed until Gutenberg is added to the core officially).
