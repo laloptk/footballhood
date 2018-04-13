@@ -1,0 +1,35 @@
+.post {
+
+	.entry-title {
+		font-size: 92px;
+		font-family: "Oswald", sans-serif;
+	}
+
+	.post-thumbnail  {
+		position: relative;
+		height: 600px;
+		overflow: hidden;
+		
+		img {
+			width: 100%;
+			height: auto;
+			@include centervh;
+		}
+	}
+
+	.entry-content {
+		display: block;
+		max-width: 767px;
+		font-size: 20px;
+		margin-top: 25px;
+	}
+
+	.entry-meta {
+		width: 100%;
+		padding: 15px;
+	}
+
+	#secondary {
+		margin-top: 25px;
+	}
+}

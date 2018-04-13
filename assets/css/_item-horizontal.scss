@@ -1,0 +1,23 @@
+.layout-horizontal {
+
+	float: left;
+	margin-bottom: 20px;
+	border: 1px solid $accent-light;
+	padding: 7px;
+
+	.article-info {
+		width: 66%;
+		padding: 0 0 0 15px;
+		float: left;
+	}
+
+	.article-img {
+		width: 34%;
+		float: left;
+	}
+
+	.article-button a {
+		float: right;
+		@include greenbutton;
+	}
+}

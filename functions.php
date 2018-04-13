@@ -74,8 +74,8 @@ if ( ! function_exists( 'ftblhood_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 150,
+			'width'       => 150,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
@@ -117,9 +117,13 @@ add_action( 'widgets_init', 'ftblhood_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ftblhood_scripts() {
-	wp_enqueue_style( 'ftblhood-style', get_stylesheet_uri() );
 
+	wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+	wp_enqueue_style( 'ftblhood-style', get_stylesheet_uri() );
+	wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Economica:400,400i,700,700i|Open+Sans:300,300i,700");
+	wp_enqueue_script('fontawesome', "https://use.fontawesome.com/releases/v5.0.8/js/all.js", array(), '5.0.8', true );
 	wp_enqueue_script( 'ftblhood-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'ftblhood-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -128,6 +132,11 @@ function ftblhood_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ftblhood_scripts' );
+
+function ftblhood_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'ftblhood_excerpt_length', 999 );
 
 /**
  * Implement the Custom Header feature.
@@ -155,4 +164,11 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Footballhood framework.
+ */
+require get_template_directory() . '/inc/classes/ftblhood-class-get-query-items-markup.php';
+require get_template_directory() . '/inc/classes/ftblhood-class-get-query-results.php';
+require get_template_directory() . '/inc/classes/ftblhood-class-sections-templates.php';
 

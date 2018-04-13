@@ -1,0 +1,41 @@
+@mixin greentextfill {
+	color: $accent-color;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(79deg, $primary-color, $accent-strong 50%, $accent-color);
+	-webkit-background-clip: text;
+}
+
+@mixin greenbutton {
+	color: $button-text-color;
+	padding: 10px;
+	border-radius: 5px;
+	background: linear-gradient(79deg, $primary-color, $accent-strong 70%, $accent-color);
+	text-align: center;
+}
+
+@mixin centerv {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin centervh {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin contentbottom {
+	position: absolute;
+	bottom: 0;
+}
+
+@mixin blacktransparentbg {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+@mixin reduce-gutter {
+	padding-left: 7px;
+	padding-right: 7px;
+}

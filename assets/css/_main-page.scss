@@ -1,0 +1,60 @@
+.main-post-col {
+
+	@include reduce-gutter;
+	
+	.layout-layered {
+
+		.article-title {
+			h2 {
+				font-size: 52px;
+			}
+		}
+
+		.article-img {
+			height: 640px;
+		}
+
+		.article-img img {
+			max-width: 150%;
+			width: 150%;
+			margin-left: -25%;
+			@include centerv;
+		}
+	}
+}
+
+.main-recent-posts {
+
+	@include reduce-gutter;
+	
+	.layout-layered {
+
+		.article-title h2 {
+			font-size: 20px;
+		}
+
+		.article-img {
+			height: 200px;
+		}
+	}
+}
+
+.three-col-grid {
+
+	.article-title {
+		h2 {
+			font-size: 20px;
+		}
+	}
+
+	.article-img {
+		height: 200px;
+	}
+
+	.article-img img {
+		max-width: 130%;
+		width: 130%;
+		margin-left: -15%;
+	}
+}
+

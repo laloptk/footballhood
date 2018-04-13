@@ -1,0 +1,64 @@
+.site-header {
+	background-color: $primary-color;
+	float: left;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+
+	.site-branding  {
+		max-width: 80px;
+		float: left;
+		position: relative;
+
+		.custom-logo-link {
+			max-width: 80px;
+		}
+
+		.custom-logo-link img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	#site-navigation {
+		float: left;
+		width: calc(100% - 80px);
+
+		.menu-toggle {
+			display: none;
+			float: right;
+			font-size: 30px;
+			color: $secondary-color;
+		}
+
+		#primary-menu {
+				
+			float: right;
+			margin-bottom: 0;
+
+			li {
+				display: inline-block;
+			}
+
+			li:first-child {
+				border-left: 1px solid $secondary-color;
+			}
+
+			li > a {
+				display: block;
+				font-family: 'Oswald', sans-serif;
+				font-size: 18px;
+				color: $secondary-color;
+				padding: 38px 15px;
+				border-right: 1px solid $secondary-color;
+				letter-spacing: 1px;
+			}
+			
+			li:hover a {
+				color: $secondary-color;
+			}
+			
+		}
+	}	
+}
+

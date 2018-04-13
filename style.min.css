@@ -1,0 +1,51 @@
+.site-header{background-color:#000;float:left;display:block;overflow:hidden;width:100%}
+.site-header .site-branding{max-width:80px;float:left;position:relative}
+.site-header .site-branding .custom-logo-link{max-width:80px}
+.site-header .site-branding .custom-logo-link img{max-width:100%;height:auto}
+.site-header #site-navigation{float:left;width:calc(100% - 80px)}
+.site-header #site-navigation .menu-toggle{display:none;float:right;font-size:30px;color:#fff}
+.site-header #site-navigation #primary-menu{float:right;margin-bottom:0}
+.site-header #site-navigation #primary-menu li{display:inline-block}
+.site-header #site-navigation #primary-menu li:first-child{border-left:1px solid #fff}
+.site-header #site-navigation #primary-menu li>a{display:block;font-family:'Oswald',sans-serif;font-size:18px;color:#fff;padding:38px 15px;border-right:1px solid #fff;letter-spacing:1px}
+.site-header #site-navigation #primary-menu li:hover a{color:#fff}
+.layout-horizontal{float:left;margin-bottom:20px;border:1px solid #5fd597;padding:7px}
+.layout-horizontal .article-info{width:66%;padding:0 0 0 15px;float:left}
+.layout-horizontal .article-img{width:34%;float:left}
+.layout-horizontal .article-button a{float:right;color:#fff;padding:10px;border-radius:5px;background:-webkit-linear-gradient(11deg,#000,#214934 70%,#3d8961);background:linear-gradient(79deg,#000,#214934 70%,#3d8961);text-align:center}
+.layout-layered{width:100%;float:left;position:relative}
+.layout-layered article{overflow:hidden;position:relative}
+.layout-layered .article-info{max-width:100%;position:absolute;bottom:0;width:100%;text-align:center;padding:15px;background-color:rgba(0,0,0,0.6)}
+.layout-layered .article-img{float:left}
+.layout-layered .article-img img{max-width:140%;width:140%;margin:0 -20%;-webkit-filter:grayscale(70%);filter:grayscale(70%);-webkit-transition:-webkit-filter 1s;transition:-webkit-filter 1s;transition:filter 1s;transition:filter 1s,-webkit-filter 1s;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.layout-layered .article-title h2,.layout-layered .article-excerpt{color:#fff}
+.layout-layered .article-button{position:relative;float:left;width:100%;display:block;overflow:hidden;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);margin-bottom:-20px}
+.layout-layered .article-button a{display:block;font-size:16px;max-width:150px;margin:0 auto;font-weight:bold;text-transform:uppercase;color:#fff;padding:10px;border-radius:5px;background:-webkit-linear-gradient(11deg,#000,#214934 70%,#3d8961);background:linear-gradient(79deg,#000,#214934 70%,#3d8961);text-align:center}
+.layout-layered:hover img{-webkit-filter:grayscale(0);filter:grayscale(0)}
+.layout-vertical.three-col-two .article-title h2{font-size:20px}
+.main-post-col{padding-left:7px;padding-right:7px}
+.main-post-col .layout-layered .article-title h2{font-size:52px}
+.main-post-col .layout-layered .article-img{height:640px}
+.main-post-col .layout-layered .article-img img{max-width:150%;width:150%;margin-left:-25%;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.main-recent-posts{padding-left:7px;padding-right:7px}
+.main-recent-posts .layout-layered .article-title h2{font-size:20px}
+.main-recent-posts .layout-layered .article-img{height:200px}
+.three-col-grid .article-title h2{font-size:20px}
+.three-col-grid .article-img{height:200px}
+.three-col-grid .article-img img{max-width:130%;width:130%;margin-left:-15%}
+.post .entry-title{font-size:92px;font-family:"Oswald",sans-serif}
+.post .post-thumbnail{position:relative;height:600px;overflow:hidden}
+.post .post-thumbnail img{width:100%;height:auto;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.post .entry-content{display:block;max-width:767px;font-size:20px;margin-top:25px}
+.post .entry-meta{width:100%;padding:15px}
+.post #secondary{margin-top:25px}
+.site-footer{float:left}
+body{font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.2}
+.content-area{float:left;width:100%;margin-top:40px;margin-bottom:40px}
+section{overflow:hidden;display:block;width:100%;float:left}
+.section{padding-top:60px}
+h2{font-family:'Oswald',sans-serif;font-size:26px;font-weight:400;letter-spacing:0}
+img{max-width:100%}
+figure{margin-bottom:0}
+a{color:#3d8961}
+.no-gutter{padding-left:7px;padding-right:7px}

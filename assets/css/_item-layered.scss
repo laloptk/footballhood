@@ -1,0 +1,61 @@
+.layout-layered {
+	width: 100%;
+	float: left;
+	position: relative;
+
+	article {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.article-info {
+		max-width: 100%;
+		@include contentbottom;
+		width: 100%;
+		text-align: center;
+		padding: 15px;
+		@include blacktransparentbg;
+	}
+
+	.article-img {
+		float: left;
+	}
+
+	.article-img img {
+		max-width: 140%;
+		width: 140%;
+		margin: 0 -20%;
+		filter: grayscale(70%);
+    	transition: filter 1s;
+		@include centerv;
+	}
+
+	.article-title h2,
+	.article-excerpt {
+		color: $secondary-color;
+	}
+
+	.article-button {
+		position: relative;
+		float: left;
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		transform: translateY(-50%);
+		margin-bottom: -20px;
+	}
+
+	.article-button a {
+		display: block;
+		font-size: 16px;
+		max-width: 150px;
+		margin: 0 auto;
+		font-weight: bold;
+		text-transform: uppercase;
+		@include greenbutton;
+	}
+
+	&:hover img {
+    	filter: grayscale(0);
+    }
+}

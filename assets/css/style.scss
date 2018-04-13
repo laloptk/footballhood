@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixins";
+@import "header";
+@import "item-horizontal";
+@import "item-layered";
+@import "item-vertical";
+@import "main-page";
+@import "single-post";
+@import "footer";
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.content-area {
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+section {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.section {
+	padding-top: 60px;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin-bottom: 0;
+}
+
+a {
+	color: $accent-color;
+}
+
+.no-gutter {
+	@include reduce-gutter;
+}
