@@ -1,21 +1,23 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-_s
+
+Footballhood theme
 ===
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+This theme is in its early stages, I'm building it to create a blog about Football in Mexico, but I also pretend this will set the basis for building a more complex framework that will help build a more robust theme that I can use in the future in my personal projects.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+For now, theres only a couple of classes inside the inc folder, and I also built a page template named Page Main (page-main.php). That template is meant to be used in the homepage and maybe using the same code with other pages that will need to list several posts from different categories. 
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A custom header implementation in `inc/custom-header.php` just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+The tools I'm using for building this theme:
+
+1. *_Underscores Starters Theme* (https://underscores.me): I want this theme to be very fast, so I don't want to use pre-built themes or builders that have tons of generic stuff and can be a burden for site speed. 
+2. WP Gulp (https://github.com/ahmadawais/WPGulp)
+Beeing able to focus on the fun stuff, or at least reduce the repetitve tasks makes development faster, so I use WP Gulp as a way to improve my workflow and have the possibility of using Sass compiling automatically and havig the browser refreshig every time a do a change on any file. Image magik might be in the way for this workflow, so I can lossy optimize images.
+3. Sass
+All styles are written with Sass and you can find them in the assets/css folder.
+4. Node.js, NPM and Gulp
+In order to use WP Gulp, I'm using Node.js, NPM and Gulp installed in my computer. 
+5. Debug Console
+This plugin is very useful to test pieces of code that you want to use in your functions or methods.
 
 Getting Started
 ---------------
